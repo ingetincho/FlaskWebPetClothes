@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #ccc;
+    font-family: "Fira Sans",sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    height: 100%;
+    font-weight: bold;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.strong a{
+    font-weight: 900;
+    color: maroon;
+}
+
+
+header{
+    background-color: chocolate;
+    color: indigo;
+   
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1rem;
+}
+
+nav{
+    background-color: peru;
+    color: #fff;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    color: saddlebrown;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+nav a:hover{
+    /* text-decoration: underline; */
+    color: rgb(11, 18, 110);
+}
+
+#presentacion{
+    background-image: url("img/puppy-facts.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+#presentacion h2{
+    color: rgb(59, 58, 56);
+    font-size: 30px;
+    line-height: 1.6em;
+    padding-top: 30px;
+
+}
+
+main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: chocolate;
+    color: white;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center; 
+}
+
+.formulario{
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+input,select,textarea {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+
+}
+
+
+
+
+.padre{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.padre div{
+    
+    align-items: center;
+    
+}
+
+.padre div img{
+    
+    border-radius: 20px;
+}
+
+.padre div h4{
+    text-align: center;
+    padding: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 100px;
+    
+}
+
+.carousel-inner img{
+    
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.carousel-container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.contenedor iframe{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.contenedor img{
+    display: flex;   
+    margin: auto; 
+    height: 10rem;
+    animation: movimiento 10s linear infinite;
+}
+
+@keyframes movimiento {
+    0%{
+        transform: translateX(0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 100%;
+    }
+    50%{
+        transform: translateX(-26rem);
+        opacity: 0%;
+    }
+    75%{
+        opacity: 100%;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 0%;
+    }
+
+}
+
+
+@media (max-width: 945px){
+    main, aside{
+
+        width: 100%;
+        float: none;
+
+    }
+
+    nav li {
+
+        display: flex;
+    }
+}
+

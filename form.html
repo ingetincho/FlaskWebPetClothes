@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <h1>Dakota Pets Clothes</h1>
+      </div>
+    </header>
+
+    <nav>
+        <div class="contenedor">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./Flexbox.html">Productos</a></li>
+            <li><a href="./Modelos.html">Nuestros Modelos</a></li>
+            <li><a href="./iframe.html">Sobre Nosotros</a></li>
+            <li class="strong"><a href="./form.html">Contactenos</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="contenedor">
+      <form action="" class="formulario">
+        <label for="name"> Nombre</label>
+        <input id="name" type="text " placeholder="Nombre" name="name" />
+        <br />
+        <label for="last"> Apellido</label>
+        <input id="last" type="text" placeholder="Apellido" name="last"/>
+        <br />
+        <label>Seleccione un producto:</label>
+
+        <select>
+          <option>Camperitas</option>
+          <option>Polos</option>
+          <option>Vestidos</option>
+          <option>Impermeables</option>
+          <option>Bandanas</option>
+          <option selected="">Polo de polar soft</option>
+        </select>
+        <br />
+        <label>Comentarios </label>
+        <br />
+        <textarea name="text" id="" cols="70" rows="10"></textarea>
+        <br />
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2021 - Dakota Clothes Proyect Code </p>
+    </footer>
+  </body>
+</html>
